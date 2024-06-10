@@ -53,5 +53,9 @@ I am an Data Analytics Professional <img src="https://media.giphy.com/media/WUlp
 ### :writing_hand: Blog Posts :
 
 <!-- BLOG-POST-LIST:START -->
+- [7 Common Pitfalls for New Data Analysts and How to Avoid Them](https://medium.com/@kayodeatoyebi/7-common-pitfalls-for-new-data-analysts-and-how-to-avoid-them-368865920439?source=rss-d27c5af5b7c7------2)
+- [3 Power Query Hacks for your Sharepoint Workflows](https://medium.com/@kayodeatoyebi/3-power-query-hacks-for-your-sharepoint-workflows-d269ff561933?source=rss-d27c5af5b7c7------2)
+- [Why Power BI Might Get You Your First Data Job](https://medium.com/@kayodeatoyebi/why-power-bi-might-get-you-your-first-data-job-4d7853ce4221?source=rss-d27c5af5b7c7------2)
+- [Leveraging Random Forest Regression to Forecast Energy Consumption](https://medium.com/@kayodeatoyebi/leveraging-random-forest-regression-to-forecast-energy-consumption-7f5185362605?source=rss-d27c5af5b7c7------2)
 <!-- BLOG-POST-LIST:END -->
 
