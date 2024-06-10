@@ -29,13 +29,14 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.ALX_TOKEN }}
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add README.md
-          echo "Checking for changes to commit..."
-          if git commit -m "Updated with the latest blog posts"; then
-            git push https://${GH_TOKEN}@github.com/holufred/holufred.git HEAD:main
-            echo "Pushed changes successfully!"
-          else
-            echo "No changes detected or failed to commit, nothing to push."
-          fi
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add README.md
+        if git status --porcelain | grep '^[^?]'; then
+          echo "Changes detected, committing and pushing..."
+          git commit -m "Updated with the latest blog posts"
+          git push https://${GH_TOKEN}@github.com/holufred/holufred.git HEAD:main
+          echo "Pushed changes successfully!"
+        else
+          echo "No changes detected, nothing to commit or push."
+        fi
