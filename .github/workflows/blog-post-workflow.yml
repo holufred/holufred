@@ -33,9 +33,9 @@ jobs:
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add README.md
           echo "Checking for changes to commit..."
-          if git diff --cached --quiet; then
-            echo "No changes to commit."
-          else
-            git commit -m "Updated with the latest blog posts"
+          if git commit -m "Updated with the latest blog posts"; then
             git push https://${GH_TOKEN}@github.com/holufred/holufred.git HEAD:main
-          fi || echo "No changes detected, nothing to commit."
+            echo "Pushed changes successfully!"
+          else
+            echo "No changes detected or failed to commit, nothing to push."
+          fi
