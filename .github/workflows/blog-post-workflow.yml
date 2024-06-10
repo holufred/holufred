@@ -19,6 +19,12 @@ jobs:
         with:
           max_post_count: "4"
           feed_list: "https://medium.com/@kayodeatoyebi/feed"
+      - name: Debug info
+        run: |
+          echo "Debug info: Showing git status"
+          git status
+          echo "Debug info: Showing current directory"
+          ls -la
       - name: Commit and push changes
         env:
           GH_TOKEN: ${{ secrets.ALX_TOKEN }}
@@ -26,9 +32,9 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add README.md
-          # Check for changes
+          echo "Checking for changes to commit..."
           if git diff --cached --quiet; then
-            echo "No changes to commit"
+            echo "No changes to commit."
           else
             git commit -m "Updated with the latest blog posts"
             git push https://${GH_TOKEN}@github.com/holufred/holufred.git HEAD:main
