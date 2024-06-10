@@ -38,4 +38,4 @@ jobs:
           else
             git commit -m "Updated with the latest blog posts"
             git push https://${GH_TOKEN}@github.com/holufred/holufred.git HEAD:main
-          fi
+          fi || echo "No changes detected, nothing to commit."
