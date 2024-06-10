@@ -19,11 +19,15 @@
 ---
 ### :man_technologist: About Me :
 
-I am an Data Analytics Professional <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30">
+I am a Data Analytics Professional with over 6 years experience <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30">
 
 - :telescope: I’m currently working as a Data Analyst (Power BI and other MS Stack) in a client-facing role.
 
 - :seedling: Exploring Software Engineering to improve my analytics workflow
+
+- :coffee: I love my coffee black.
+
+- :musical_keyboard: Amateur Piano Player exploring new pieces and techniques.
 
 ---
 
